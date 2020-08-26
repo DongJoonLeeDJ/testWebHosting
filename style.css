@@ -1,0 +1,52 @@
+body
+        {
+            margin : 0;
+            padding: 0;
+        }
+        /*div.body
+        {
+            width: 500px;
+            margin:auto;
+        }*/
+        div.container
+        {
+            background-image: url('photo.jpg');
+            background-size: 100% 100%;
+            background-repeat: no-repeat;
+            margin-top: 50%;
+            margin-bottom: 50%;
+            width: 500px;
+            height: 500px;
+            overflow: hidden;
+        }
+        /*h1#title
+        {*/
+            /* margin-left:1430px; */
+           /* text-align: center;
+            font-style:normal;
+            color:wheat;
+            width: 500px;
+            height: 50px;
+            text-shadow: 10px 10px 10px black;
+        }*/
+
+        /*div.part1
+        {
+            width: 250px;
+            height: 400px;
+            float: left;
+        }
+
+        div.part2
+        {
+            width: 250px;
+            height: 400px;
+            float: left;
+        }
+
+        p.part
+        {
+            width: 250px;
+            float: left;
+            color:blue;
+        }*/
