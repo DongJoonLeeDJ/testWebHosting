@@ -1,0 +1,40 @@
+{
+    "studentName": "ldj",
+    "age":33,
+    "language" :
+    [
+        {
+            "codings" :
+            [
+                "Linux"
+            ],
+            "communication" :
+            [
+                "Heaven Language"
+            ]
+        }
+        ,
+        {
+            "codings" :
+            [
+                "C","C#","Java","javaScript", "jQuery", "CSS", "HTML","JSP","SQL"
+            ],
+            "communication" :
+            [
+                "Korea","Japan","English"
+            ]
+        }
+        ,{
+            "codings" :
+            [
+                "Android", "Kotlin", "Tibero", "WebSquare"
+            ],
+            "communication" :
+            [
+                "Spnanish"
+            ]
+        }
+
+    ] 
+
+}
