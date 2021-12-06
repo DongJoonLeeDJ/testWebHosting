@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{color:springgreen}
+        p{background-color: springgreen;}
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error vero quibusdam pariatur maxime tempora dolores nemo magni mollitia modi suscipit aut, in vel numquam veniam. Odit nisi ratione impedit enim.lorem</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia, totam tempora? Laboriosam dolore eos atque modi quibusdam excepturi fuga quas dicta, deleniti illum dignissimos perspiciatis repellat culpa doloremque. Inventore, amet.</p>
+    <img src="https://picsum.photos/id/684/600/400" alt="">
+    <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex accusantium labore, deserunt vero quisquam mollitia asperiores consequuntur dignissimos esse iure voluptates non officiis perferendis expedita facilis nihil voluptatem? Quos, sapiente.</h2>
+    <script>
+        document.querySelector('h1').onclick = ()=>{
+            history.back()
+         //   location.href = '03_history.html'
+        }
+        document.querySelector('p').onclick = ()=>{
+            history.forward()
+         //   location.href = '03_history.html'
+        }
+        document.querySelector('img').onclick = () => {
+           location.href = '04_history.html'
+
+        }
+        
+        document.querySelector('h2').onclick = () =>{
+        //    string = document.referrer
+        //    alert(string)
+            alert(document.referrer)
+           console.log(document.referrer)
+        }
+    </script>
+</body>
+</html>

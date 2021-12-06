@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{color:pink; background-color: blue;}
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor tempora alias dolore esse perspiciatis! Expedita ex dignissimos in itaque est suscipit, a saepe provident quia aspernatur fugiat tenetur, temporibus alias?</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis nihil adipisci velit delectus totam explicabo, suscipit fuga obcaecati pariatur sequi numquam sint eveniet natus reprehenderit, architecto minima quaerat asperiores! Aliquid!</p>
+    <script>
+        document.querySelector('h1').onclick = () =>
+        {
+            // location.href='03_history.html' //이렇게해서 가면 뒤돌아가기 안 됨
+           history.back()
+
+        }
+        document.querySelector('p').onclick = () =>{
+            alert(document.referrer)
+            console.log(document.referrer)
+        }
+    </script>
+</body>
+</html>
