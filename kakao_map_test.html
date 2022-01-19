@@ -32,6 +32,7 @@ function setCenter(lat, lng)
     marker.setMap(null); //마커지움
     var mp= new kakao.maps.LatLng(lat,lng); //맵과 마커의 위치
     map.setCenter(mp); //맵 이동
+    marker = new kakao.maps.Marker({ position: mp});//새로 만들어줘야 새로 그려진다.
     marker.setMap(map); //마커 그림
 }
 
