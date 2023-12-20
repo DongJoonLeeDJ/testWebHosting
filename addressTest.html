@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<form>
+    <input name="address"></input>
+</form>
+
+    <script src="https://t1.daumcdn.net/mapjsapi/bundle/postcode/prod/postcode.v2.js"></script>
+	<script>
+/*
+공식 가이드 문서
+https://postcode.map.daum.net/guide
+
+
+jsp나 spring 등을 통해서 진행해야 함(톰캣 서버와 같은 서버가 필요함)
+https://github.com/daumPostcode/QnA/issues/642
+
+*/
+
+    let address = document.querySelector("input[name=address]")
+	address.addEventListener("click", function(){ 
+        //alert('!!!')
+
+        new daum.Postcode({
+            oncomplete: function(data) { 
+            	//address.value = data.address; 
+                //onsole.log(data)
+            	address.value = data.roadAddress; 
+            }
+        }).open();
+    });
+
+</script>
+</body>
+</html>
